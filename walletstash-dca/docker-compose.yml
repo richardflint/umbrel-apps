@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: walletstash-dca_server_1
+      APP_PORT: 3000
+
+  server:
+    image: walletstash-dca-server:latest
+    restart: on-failure
+    stop_grace_period: 1m
+    environment:
+      - SEED_USERNAME=umbrel
+      - SEED_PASSWORD=${APP_PASSWORD}
+      - LOGS_DIR=/build/logs/
+      - DB_DIR=/build/db/
+    volumes:
+      - ${APP_DATA_DIR}/data:/build/db
+      - ${APP_DATA_DIR}/logs:/build/logs
