@@ -11,8 +11,6 @@ services:
     image: walletstash-dca-server:latest
     restart: on-failure
     stop_grace_period: 1m
-    ports:
-      - 3000:3000
     environment:
       - SEED_USERNAME=umbrel
       - SEED_PASSWORD=${APP_PASSWORD}
