@@ -2,7 +2,7 @@ manifestVersion: 1
 id: walletstash-dca
 category: Finance
 name: Walletstash DCA
-version: "0.0.2"
+version: "0.0.3"
 tagline: A self-hosted DCA solution
 description: >-
   Walletstash DCA is a self-hosted DCA solution.
