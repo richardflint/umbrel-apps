@@ -1,25 +1,27 @@
 manifestVersion: 1
 id: torq
-category: Lightning Node Management
+category: bitcoin
 name: Torq
-version: "v0.20.3"
-tagline: Capital management for routing nodes on the lightning network
+version: "v0.23.1"
+tagline: Scalable Node Management Software
 description: >-
-  Operating a routing node requires managing capital efficiently. If you look past the technical challenges, what you are trying to do is stack sats and support the network by routing liquidity. No matter your motivation, efficiently managing your capital is essential.
+  Operating a Lightning node requires a lot of work. You need to monitor your channels, rebalance them, keep track of your fees and much more.
 
 
-  With Torq, you can collect routing data and you analyze your data with increasingly advanced tools.
+  With Torq, you can collect and analyze your data with increasingly advanced tools.
 
 
   Features:
 
-  - Channel and Channel group inspection
+  - Workflow based automation.
+
+  - Channel and Channel group inspection, even with more than 1000 channels.
+  
+  - Advanced charts and visualizations of aggregated forwarding statistics
 
   - See the channel balance (inbound/outbound capacity) over time
 
-  - Advanced charts and visualizations of aggregated forwarding statistics
-
-  - Visualization of sources and destinations for traffic
+  - Manage multiple nodes at once.
 
   - Stores all events from your node including HTLC events, fee rate changes and channel enable/disable events
 
@@ -33,13 +35,13 @@ description: >-
 
   - Tag channels and nodes with custom labels (Exchange, Routing node, Sink, Source, or anything else)
 
-  - Automation of channel policy (fee rate etc.) and add or remove tags
+  
 
 developer: LN Capital
 website: https://ln.capital
 dependencies:
   - lightning
-repo: https://github.com/lncapital/torq
+repo: ""
 support: https://github.com/lncapital/torq/issues/new
 port: 7028
 gallery:
@@ -49,12 +51,37 @@ gallery:
   - 4.jpg
   - 5.jpg
 releaseNotes: >-
-  New peers page, bugs and performance enhancements.
-
-  Database migrations might take some time on first start up.
+  New features:
+  
+  - Open telemetry instrumentation
+  
+  - Jaeger tracing
+  
+  - Prometheus export
+  
+  - Peers' page now supports multi-node setups
+  
+  - Custom mempool.space URL
+  
+  - Inspect a closed/closing channel
+  
+  - Pagination added to all channel table pages and forwarding pages
+  
+  
+  Bugfixes:
+  
+  - Fix Amboss ping service
+  
+  - Increase initial channel data import throughput
+  
+  - LND maximum message size increase to 150M
+  
+  - CLN fixes (thanks to borsche-hfsp.com)
+  
+  - And more...
 
 path: ""
 defaultUsername: ""
 deterministicPassword: false
 submitter: LN Capital
-submission: https://github.com/getumbrel/umbrel-apps/pull/269
+submission: https://github.com/getumbrel/umbrel-apps/pull/549

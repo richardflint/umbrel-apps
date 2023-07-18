@@ -7,7 +7,7 @@ services:
       APP_PORT: 3004
 
   web:
-    image: lightninglabs/lightning-terminal:v0.8.6-alpha@sha256:b2a5a90da72d5571f3608f830091853f2ebfd1fb2dabfa86d1447dc6d2a42dce
+    image: lightninglabs/lightning-terminal:v0.10.2-alpha@sha256:b8b827a2da5ee50a3310c575e40b1a92e50f4445b2452964b450492865d7cd86
     user: "1000:1000"
     restart: on-failure
     stop_grace_period: 1m

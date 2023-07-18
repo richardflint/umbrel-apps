@@ -1,8 +1,8 @@
 manifestVersion: 1
 id: snort
-category: Social
+category: social
 name: Snort
-version: "v0.1.7"
+version: "v0.1.11"
 tagline: Fast Nostr UI
 description: >-
   Snort is a client for Nostr that is built using React, designed to be fast and lightweight while still offering a wide range of features. 
@@ -11,49 +11,76 @@ description: >-
 releaseNotes: >-
   ## Added
 
-  * Per event zap targets by @v0l
+  - Discover tab, shows trending users/posts from nostr.build
 
-  * Content warning (NIP-36) support by @v0l
+  - New DM styles
 
-  * Polls (NIP-69) by @v0l
+  - Mentioned Zapstr tracks are previewed on Snort with player
 
-  * Snort subscriptions by @v0l
+  - Custom emoji rendering in posts (NIP-30)
 
-  * NIP-94 File header support by @v0l
+  - Lanaguage selector on new user flow 
 
-  * Link previews by @ghobs91 & @v0l
+  - ZapPool, support nostr ecosystem by donating a percentage of your zaps
 
-  * Cmd+Enter to post note by @v0l
+  - Alby NWC link added to NWC connect page
 
-  * `nostr:` links (NIP-27) by @v0l
+  - SemisolDev follow recommendations on Discover tab
 
-  * Tending users on Search page by @ghobs91 & @v0l 
+  - Pubkey lists (NIP-51) render inline when mentioned in notes
+
+  - Persian language
+
+  - OpenGraph Image/Video media rendered inside link preview box
+
+  - Option to zap everybody on mentioned pubkey list
+
+  - L402 support for inline media (paywall content)
+
+  - Gossip model, query follows write relays for events
+
+  - @snort/system NPM package containing Snort core nostr code
+
+  - NIP-44 Encryption scheme support
+
+  - NIP-59 Gift Wrap support
+
+  - `@snort/system` package 
+
+  - `@snort/system-react` package 
+
+  - Live streaming page (NIP-102)
+
+  - Chat system refactor (adding new chat systems much easier now, NIP-29 first candidate)
+
+  - NIP-29 simple group chat support
 
 
   ## Changed
 
-  * Paste image upload by @vivganes
+  - Error page shows actual error message now, also a button to reset app cache
 
-  * Note creator note preview by @v0l 
+  - Massivly improved profile loading 
 
-  * Login private key input masking by @vivganes
+  - Improved JS bundle size by ejecting CRA and using dynamic modules
+
+  - Switched to `@void-cat/api` package for void.cat uploads 
 
 
   ## Fixed
 
-  * Fix note creator closing on thread when new replies load by @SamSamskies
-
-  * Follow hashtag tab highlighting by @SamSamskies
-
-  * Language dropdown defaults to Arabic by @vivganes
-
-  * Bookmarks showing reactions by @vivganes
-
-  * Single zapper on note only shows name by @vivganes
-
-  * Broken link previews show empty box by @vivganes
+  - Unmarked thread events replies out of order
   
-  * Render jfif images by @v0l 
+  - Profile links with incorrect hrp fixed in some places
+
+  - `naddr` event loading fixed
+
+  - Relay specific requests fixed (Global tab / Search page)
+
+  - NWC connection responds to AUTH requests now
+
+
+  https://git.v0l.io/Kieran/snort/compare/v0.1.8...v0.1.11
 developer: Snort
 website: https://snort.social
 dependencies: []
