@@ -2,7 +2,7 @@ manifestVersion: 1.1
 id: bitcoin
 category: bitcoin
 name: Bitcoin Node
-version: "25.0"
+version: "26.0"
 tagline: Run your personal node powered by Bitcoin Core
 description: >-
   Run your Bitcoin node and independently store and validate
@@ -14,6 +14,13 @@ description: >-
 
   Plus, transacting with your own node also helps keep the entire
   Bitcoin network decentralized; win-win!
+
+
+  With over 20 advanced settings, you can take control of your node
+  and customize it to your needs. Control how your node connects to
+  other nodes over Tor, clearnet, and I2P, adjust your daily upload
+  limit, set the maximum mempool size, fine-tune its performance,
+  and much more.
 
 
   Don't trust. Verify. On steroids.
@@ -35,24 +42,18 @@ gallery:
 path: ""
 defaultPassword: ""
 releaseNotes: >-
-  What's new in Bitcoin Core version 25.0?
+  What's new in Bitcoin Core version 26.0?
 
 
   - P2P and network changes
 
-  - New and updated RPCs as well as low-level changes
+  - Pruning changes: Improved handling of prune budget when using assumeutxo with -prune.
 
-  - New and updated settings
+  - New and updated RPCs
   
-  - Compatibility updates
-  
-  - Wallet updates
-
-  - REST changes
-
-  - Reduced peers.dat corruption risks
+  - and more!
 
 
-  Read the full release notes for additional information and detailed changes at https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-25.0.md
+  Read the full release notes for additional information and detailed changes at https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-26.0.md
 submitter: Umbrel
 submission: https://github.com/getumbrel/umbrel-apps/commit/576ecd2bef8d625abceed0f67ec9c487da9b2b1b

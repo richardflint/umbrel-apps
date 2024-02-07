@@ -2,7 +2,7 @@ manifestVersion: 1
 id: rotki
 category: finance
 name: rotki
-version: "1.29.0"
+version: "1.31.0"
 tagline: Portfolio tracking, analytics, accounting and tax reporting
 description: >-
   rotki is an open source portfolio tracking, analytics, accounting and tax reporting tool that protects your privacy. 
@@ -25,13 +25,10 @@ repo: https://github.com/rotki/rotki
 support: https://github.com/rotki/rotki/issues
 port: 8084
 releaseNotes: >-
-  Rotki v1.29.0 is a big release containing many improvements 
-  and bug fixes the team made in the last month! 
-  The biggest feature coming in this release is support for the Polygon POS chain (also known as Matic),
-  but also a lot of smaller improvements and new protocol decoders for history events.
-
-
-  Full release notes and changes from previous versions can be found here: https://github.com/rotki/rotki/releases/
+  rotki v1.31.0 is a gigantic release containing all the work that the team has been preparing in the last 3 months! 
+  The biggest features coming in this release are support for Gnosis chain, support for Base chain, Velodrome support, a UI redesign but also a lot of smaller improvements and new protocol decoders for history events such as graph, ethereum attestation service and more!
+  
+  Full release notes and changes from previous versions can be found here: https://github.com/rotki/rotki/releases
 gallery:
   - 1.jpg
   - 2.jpg

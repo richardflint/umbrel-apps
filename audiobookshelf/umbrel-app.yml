@@ -3,7 +3,7 @@ id: audiobookshelf
 name: Audiobookshelf
 tagline: Audiobook and podcast server
 category: media
-version: "2.2.22"
+version: "2.7.1"
 port: 13378
 description: >-
   Features:
@@ -61,20 +61,22 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Added: 
-    - Send ebook to other devices
-    - Export OPML for podcast libraries
-    - Library filter for ebook items
+  This release brings audiobookshelf from version 2.6.0 to 2.7.1. 
 
-  Fixed: 
-    - Closing audio player resetting progress
-    - Epub3 ebook showing white background
-    - Podcast episode downloads for RSS feeds that use the same title for every episode
+  Note: OpenID Connect Authentication requires mobile app v0.9.70-beta or up
 
-  Changed: 
-    - Library filter max height set to window height
-    - New API endpoints for static library item files, ebooks and downloading
-    - Security updates
-    - More strings translated (German)
+
+  Added
+
+  - Year in review stats images to user stats page
+
+  - Ability to fetch book data in uploader
+
+  - Zoom controls to comic reader
+
+  Plus many fixes and changes...
+
+  
+  Full release notes can be found at https://github.com/advplyr/audiobookshelf/releases
 submitter: Jasper
 submission: https://github.com/getumbrel/umbrel-apps/pull/302

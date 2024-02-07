@@ -2,7 +2,7 @@ manifestVersion: 1
 id: thunderhub
 category: bitcoin
 name: ThunderHub
-version: "0.13.19"
+version: "0.13.30"
 tagline: Take full control of your Lightning node
 description: >-
   ThunderHub allows you to take full control of your Lightning node
@@ -14,7 +14,7 @@ description: >-
 
   Managing and monitoring your node has never been easier with transaction reports, graphs and a huge assortment of different features all bundled inside of this great tool.
 developer: Anthony Potdevin
-website: https://apotdevin.com
+website: https://thunderhub.io/
 dependencies:
   - lightning
 repo: https://github.com/apotdevin/thunderhub
@@ -27,13 +27,13 @@ gallery:
 path: ""
 defaultUsername: ""
 deterministicPassword: true
-releaseNotes: >-  
-  - Feature: add channel id to channel select dropdown @AmbossKeegan (#531)
-
-  - Feature:: add post to keysend billboard on amboss page @secondl1ght (#522)
+releaseNotes: >-
+  - Chore: Extra error log
   
-  - Feature:: make accounting years dynamically update @secondl1ght (#517)
+  - Fix: Boltz swap claim transaction fees
   
-  - Full changelog can be found here: https://github.com/apotdevin/thunderhub/releases/tag/v0.13.19
+  - Fix: Adding safety on object lookups
+  
+  Full release notes can be found at https://github.com/apotdevin/thunderhub/releases/tag/v0.13.30
 submitter: Anthony Potdevin
 submission: https://github.com/getumbrel/umbrel/pull/343
